@@ -5,7 +5,7 @@ more on how to enable this functionality in your environment.**
 
 A deep-equality module with support for ES6 stuff (Map, Set & typed arrays) and circular structures.
 Based on [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) module
-by Evgeny Poberezkin.
+by Evgeny Poberezkin (MIT license).
 
 ## Installation
 ```sh
