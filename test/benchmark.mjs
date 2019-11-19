@@ -12,6 +12,16 @@ import Features from './Features.mjs';
 const packages =
 [
 	{
+		name : 'fast-deep-equal',
+		features : Features.NONE,
+		fn : (a, b) => fastDeepEqual(a, b)
+	},
+	{
+		name : 'fast-deep-equal/es6',
+		features: Features.ES6_SET | Features.ES6_MAP | Features.ES6_TYPED,
+		fn : (a, b) => fastDeepEqualES6(a, b)
+	},
+	{
 		name : 'slow-deep-equal (no checks)',
 		features: Features.ALL ^ Features.CIRCULAR,
 		fn : (a, b) => slowDeepEqual(a, b, false)
@@ -20,16 +30,6 @@ const packages =
 		name : 'slow-deep-equal (circular checks)',
 		features: Features.ALL,
 		fn : (a, b) => slowDeepEqual(a, b, true)
-	},
-	{
-		name : 'fast-deep-equal/es6',
-		features: Features.ES6_SET | Features.ES6_MAP | Features.ES6_TYPED,
-		fn : (a, b) => fastDeepEqualES6(a, b)
-	},
-	{
-		name : 'fast-deep-equal',
-		features : Features.NONE,
-		fn : (a, b) => fastDeepEqual(a, b)
 	}
 ];
 

@@ -68,7 +68,7 @@ function detectLoop(obj, currentStack)
 	return -1;
 }
 
-export default function equal(a, b, circularChecks = true, _aStack, _bStack)
+function equal(a, b, circularChecks = true, _aStack, _bStack)
 {
 	if (a === b)
 	{
@@ -239,3 +239,7 @@ export default function equal(a, b, circularChecks = true, _aStack, _bStack)
 	// true if both NaN, false otherwise
 	return a !== a && b !== b;
 }
+
+// support both ways
+export { equal };
+export default equal;

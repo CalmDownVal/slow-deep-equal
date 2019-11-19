@@ -1,8 +1,9 @@
 {
 	"name": "@calmdownval/slow-deep-equal",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"main": "src/index.mjs",
+	"types": "src/index.d.ts",
 	"license": "MIT",
 	"description": "deep equal with circular structure support",
 	"keywords": [
@@ -20,13 +21,13 @@
 	},
 	"devDependencies": {
 		"benchmark": "^2.1.4",
-		"cross-env": "^5.2.0",
-		"fast-deep-equal": "^3.0.0-beta.1",
-		"glob": "^7.1.4",
-		"mocha": "^6.2.0"
+		"cross-env": "^6.0.3",
+		"fast-deep-equal": "^3.0.0-beta.2",
+		"glob": "^7.1.6",
+		"mocha": "^6.2.2"
 	},
 	"scripts": {
 		"benchmark": "node --experimental-modules ./test/benchmark.mjs",
-		"test": "cross-env NODE_OPTIONS=\"--experimental-modules\" mocha --delay script/test.esm.js"
+		"test": "cross-env NODE_OPTIONS=\"--experimental-modules\" mocha --delay script/mocha.cjs"
 	}
 }
