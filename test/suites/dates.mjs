@@ -1,4 +1,4 @@
-export default
+export const dates =
 {
 	description: 'Date objects',
 	tests:

@@ -1,4 +1,4 @@
-export default
+export const scalars =
 {
 	description: 'scalars',
 	tests:

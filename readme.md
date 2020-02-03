@@ -1,9 +1,5 @@
 # Deep Equal
 
-**This module uses the ES modules feature and requires Node v8.15.0+. Please
-refer to [Node's documentation](https://nodejs.org/api/esm.html#esm_enabling)
-to read more on how to enable this functionality in your environment.**
-
 A deep-equality module with support for ES6 stuff (Map, Set & typed arrays) and
 circular structures. Based on
 [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) module by
@@ -17,7 +13,7 @@ npm install @calmdownval/slow-deep-equal
 
 ## Usage
 
-The module exports one function with the signature:
+The module exports one function (named export) with the signature:
 
 ```ts
 function equal(a: any, b: any, circularChecks: boolean = true): boolean

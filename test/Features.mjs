@@ -1,4 +1,4 @@
-export default
+export const Features =
 {
 	// ES6 Set equality
 	ES6_SET : 1,

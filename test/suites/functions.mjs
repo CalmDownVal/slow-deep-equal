@@ -1,7 +1,7 @@
 function func1() {}
 function func2() {}
 
-export default
+export const functions =
 {
 	description: 'functions',
 	tests:

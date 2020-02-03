@@ -1,4 +1,4 @@
-import Features from '../Features.mjs';
+import { Features } from '../Features.mjs';
 
 class MySet extends Set {}
 
@@ -19,7 +19,7 @@ function mySet(arr)
 
 const emptyObj = {};
 
-export default
+export const sets =
 {
 	description: 'Sets',
 	features: Features.ES6_SET,

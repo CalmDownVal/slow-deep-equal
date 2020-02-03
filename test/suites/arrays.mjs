@@ -1,4 +1,4 @@
-export default
+export const arrays =
 {
 	description: 'arrays',
 	tests:

@@ -1,3 +1,5 @@
+'use strict';
+
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 const toString = Object.prototype.toString;
 const valueOf = Object.prototype.valueOf;
@@ -240,6 +242,9 @@ function equal(a, b, circularChecks = true, _aStack, _bStack)
 	return a !== a && b !== b;
 }
 
-// support both ways
-export { equal };
-export default equal;
+// Node's ESM, TS and Webpack compatible export
+Object.defineProperty(equal, '__esModule', { value: true });
+equal.equal = equal;
+equal.default = equal;
+
+module.exports = equal;

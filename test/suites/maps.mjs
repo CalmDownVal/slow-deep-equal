@@ -1,4 +1,4 @@
-import Features from '../Features.mjs';
+import { Features } from '../Features.mjs';
 
 class MyMap extends Map {}
 
@@ -17,7 +17,7 @@ function myMap(obj)
 	return map(obj, MyMap);
 }
 
-export default
+export const maps =
 {
 	description: 'Maps',
 	features: Features.ES6_MAP,

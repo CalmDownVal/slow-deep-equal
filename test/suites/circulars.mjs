@@ -1,4 +1,4 @@
-import Features from '../Features.mjs';
+import { Features } from '../Features.mjs';
 
 const circular1 =
 {
@@ -31,7 +31,7 @@ const circular3 =
 };
 circular3.lorem[1] = circular3;
 
-export default
+export const circulars =
 {
 	description: 'circular structures',
 	features: Features.CIRCULAR,

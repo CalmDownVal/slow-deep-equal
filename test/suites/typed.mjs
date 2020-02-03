@@ -1,6 +1,6 @@
-import Features from '../Features.mjs';
+import { Features } from '../Features.mjs';
 
-export default
+export const typed =
 {
 	description: 'Typed arrays',
 	features: Features.ES6_TYPED,

@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 import Benchmark from 'benchmark';
-import slowDeepEqual from '../src/index.mjs';
+import slowDeepEqual from '../src/index.cjs';
 import fastDeepEqual from 'fast-deep-equal';
 import fastDeepEqualES6 from 'fast-deep-equal/es6/index.js';
-import suites from './suites/index.mjs';
-import Features from './Features.mjs';
+import { suites } from './suites/index.mjs';
+import { Features } from './Features.mjs';
 
 // define packages to benchmark here
 // you shouldn't need to touch the rest
